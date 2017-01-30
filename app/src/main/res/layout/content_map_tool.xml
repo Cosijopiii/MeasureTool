@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_map_tool"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.edu.unistmo.measuretool.MapToolActivity"
+    tools:showIn="@layout/activity_map_tool"
+    android:background="@color/primary">
+
+    <TextView
+        android:text="Àrea: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblArea"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed"
+        android:typeface="serif"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnCalculate"
+        android:paddingLeft="3dp"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/btnCalculate" />
+
+    <Button
+        android:text="calcular área"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalculate"
+        android:layout_marginStart="17dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapView"
+        android:layout_above="@+id/btnCalculate"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:text="Pasos : "
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblStep"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:paddingTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:typeface="sans"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center" />
+
+</RelativeLayout>
